@@ -1,0 +1,46 @@
+# Git Ignore for Explainable AI Zero Trust IDS
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Temporary files
+*.log
+*.tmp
+
+# Raw large datasets (use dataset/download_dataset.py to fetch)
+dataset/original/*.csv
+dataset/*.zip
+

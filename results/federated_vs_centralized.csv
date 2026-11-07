@@ -1,0 +1,3 @@
+Paradigm,Data Sharing,Accuracy,Macro F1,Privacy Preservation
+Centralized Learning (Baseline),Raw flow data pooled to central server,0.9808,0.9353,None (Full Data Exposure)
+Federated Learning (FedAvg),Zero raw data shared; model updates only,0.9246,0.8066,High (Decentralized Local Training)

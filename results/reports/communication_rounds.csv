@@ -1,0 +1,2 @@
+round,global_accuracy,global_f1_macro,global_precision,global_recall,global_loss,active_clients,round_duration_sec
+1,0.924625,0.8066431021138172,0.7924927192621288,0.9164295025533085,0.21716052190092583,3,4.444

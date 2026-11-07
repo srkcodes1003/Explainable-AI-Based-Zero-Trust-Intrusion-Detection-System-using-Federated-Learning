@@ -1,0 +1,52 @@
+================================================================================
+CIC-IDS2017 INTRUSION DETECTION SYSTEM - MODEL EVALUATION REPORT
+Evaluated on Independent Test Partition: C:\Users\Hp\Desktop\Major Project (Project)\dataset\processed\test.csv (24,000 samples)
+================================================================================
+
+MODEL: SGDClassifier (Federated Primary)
+------------------------------------------------------------
+Accuracy:            98.08%
+Macro Precision:     0.9144
+Macro Recall:        0.9637
+Macro F1-Score:      0.9353
+Weighted F1-Score:   0.9813
+False Positive Rate: 4.72%
+Inference Latency:   0.001 ms/flow
+
+Per-Class Classification Report:
+              precision    recall  f1-score   support
+
+      BENIGN       0.99      0.95      0.97      7854
+         DoS       0.98      1.00      0.99      7855
+    PortScan       0.99      0.99      0.99      7855
+  Web Attack       0.69      0.91      0.79       436
+
+    accuracy                           0.98     24000
+   macro avg       0.91      0.96      0.94     24000
+weighted avg       0.98      0.98      0.98     24000
+
+================================================================================
+
+MODEL: Random Forest (Baseline Comparison)
+------------------------------------------------------------
+Accuracy:            99.94%
+Macro Precision:     0.9974
+Macro Recall:        0.9958
+Macro F1-Score:      0.9966
+Weighted F1-Score:   0.9994
+False Positive Rate: 0.04%
+Inference Latency:   0.021 ms/flow
+
+Per-Class Classification Report:
+              precision    recall  f1-score   support
+
+      BENIGN       1.00      1.00      1.00      7854
+         DoS       1.00      1.00      1.00      7855
+    PortScan       1.00      1.00      1.00      7855
+  Web Attack       0.99      0.98      0.99       436
+
+    accuracy                           1.00     24000
+   macro avg       1.00      1.00      1.00     24000
+weighted avg       1.00      1.00      1.00     24000
+
+================================================================================

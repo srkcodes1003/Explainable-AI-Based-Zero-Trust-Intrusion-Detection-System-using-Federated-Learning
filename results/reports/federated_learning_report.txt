@@ -1,0 +1,27 @@
+================================================================================
+FEDERATED LEARNING INTRUSION DETECTION SYSTEM - TRAINING REPORT
+================================================================================
+Framework:                   Flower (flwr v1.15.2)
+Aggregation Strategy:        Federated Averaging (FedAvg)
+Client Organizations:        3
+  - Client 1: Organization A (Enterprise Campus Network)
+  - Client 2: Organization B (Cloud Infrastructure)
+  - Client 3: Organization C (Branch Office / Edge Perimeter)
+Data Distribution Strategy:  NON_IID (Dirichlet non-IID partitioning)
+Communication Rounds:        1
+Local Epochs per Round:      1
+Local Batch Size:            128
+Total Simulation Duration:   4.44 seconds
+--------------------------------------------------------------------------------
+COMMUNICATION ROUND PERFORMANCE HISTORY (GLOBAL TEST SET):
+--------------------------------------------------------------------------------
+Round    | Global Accuracy    | Global Macro F1    | Loss
+--------------------------------------------------------------------------------
+1        |  92.46%            | 0.8066            | 0.2172
+--------------------------------------------------------------------------------
+CENTRALIZED VS FEDERATED COMPARISON:
+  Centralized Benchmark Accuracy: 98.08% (Macro F1: 0.9353)
+  Federated (FedAvg) Accuracy:    92.46% (Macro F1: 0.8066)
+  Accuracy Difference:            -5.62%
+  Privacy Guarantee:              Raw network records NEVER leave client perimeters.
+================================================================================

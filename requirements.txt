@@ -1,0 +1,15 @@
+# Pinned, tested dependency versions for Explainable AI Zero Trust IDS (Windows 64-bit, Python 3.12/3.11)
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.5.2
+imbalanced-learn==0.12.4
+joblib==1.4.2
+flwr==1.15.2
+shap==0.46.0
+matplotlib==3.9.4
+seaborn==0.13.2
+flask==3.0.3
+pytest==8.3.5
+scipy==1.18.1
+protobuf==4.25.9
+grpcio==1.85.1

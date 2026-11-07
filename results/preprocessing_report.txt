@@ -1,0 +1,28 @@
+================================================================================
+CIC-IDS2017 DATA PREPROCESSING & LEAKAGE PREVENTION REPORT
+================================================================================
+Final Retained Features Count: 68
+Constant/Zero-Variance Features Removed: 10
+  Removed Features: Bwd PSH Flags, Fwd URG Flags, Bwd URG Flags, CWE Flag Count, Fwd Avg Bytes/Bulk, Fwd Avg Packets/Bulk, Fwd Avg Bulk Rate, Bwd Avg Bytes/Bulk, Bwd Avg Packets/Bulk, Bwd Avg Bulk Rate
+--------------------------------------------------------------------------------
+DATASET PARTITION SIZES:
+  Training Set:   83,999 records (70.0%)
+  Validation Set: 12,000 records (10.0%)
+  Test Set:       24,000 records (20.0%)
+  Total Processed: 119,999 records
+--------------------------------------------------------------------------------
+LABEL MAPPING & CLASS DISTRIBUTION ACROSS PARTITIONS:
+Class ID   | Class Name             | Train        | Val        | Test
+--------------------------------------------------------------------------------
+0          | BENIGN                 | 27,491       | 3,928      | 7,854     
+1          | DoS                    | 27,491       | 3,927      | 7,855     
+2          | PortScan               | 27,491       | 3,927      | 7,855     
+3          | Web Attack             | 1,526        | 218        | 436       
+================================================================================
+DATA LEAKAGE PREVENTION AUDIT:
+1. Split Timing: Partitioned train/val/test BEFORE fitting imputer and scaler.
+2. Imputation: SimpleImputer(median) fit strictly on train_df.
+3. Scaling: StandardScaler fit strictly on train_df.
+4. Feature Selection: Zero-variance detection computed on train_df only.
+5. Reproducibility: Pinned seed used across all splits and sampling steps.
+================================================================================

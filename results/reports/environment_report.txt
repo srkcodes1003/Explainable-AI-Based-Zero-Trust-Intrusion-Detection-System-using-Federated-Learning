@@ -1,0 +1,24 @@
+============================================================
+EXPLAINABLE AI ZERO TRUST IDS - ENVIRONMENT VERIFICATION
+============================================================
+Operating System: Windows 11 (10.0.26200)
+Architecture:     64bit
+Python Version:   3.12.10 (C:\Users\Hp\Desktop\Major Project (Project)\venv\Scripts\python.exe)
+Is 64-bit Python: True
+------------------------------------------------------------
+Package              | Status       | Installed Version
+------------------------------------------------------------
+numpy                | SUCCESS      | 2.0.2
+pandas               | SUCCESS      | 2.2.3
+sklearn              | SUCCESS      | 1.5.2
+imblearn             | SUCCESS      | 0.12.4
+joblib               | SUCCESS      | 1.4.2
+flwr                 | SUCCESS      | 1.15.2
+shap                 | SUCCESS      | 0.46.0
+matplotlib           | SUCCESS      | 3.9.4
+seaborn              | SUCCESS      | 0.13.2
+flask                | SUCCESS      | 3.0.3
+pytest               | SUCCESS      | 8.3.5
+============================================================
+Status: Environment setup completed successfully.
+============================================================

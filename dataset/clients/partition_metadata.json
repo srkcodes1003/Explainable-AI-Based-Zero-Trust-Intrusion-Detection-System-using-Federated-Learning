@@ -1,0 +1,35 @@
+{
+  "client_1": {
+    "organization": "Organization A (Enterprise Campus Network)",
+    "file_path": "C:\\Users\\Hp\\Desktop\\Major Project (Project)\\dataset\\clients\\client_1.csv",
+    "total_records": 29579,
+    "class_distribution": {
+      "1": 21282,
+      "0": 7361,
+      "3": 910,
+      "2": 26
+    }
+  },
+  "client_2": {
+    "organization": "Organization B (Cloud Infrastructure)",
+    "file_path": "C:\\Users\\Hp\\Desktop\\Major Project (Project)\\dataset\\clients\\client_2.csv",
+    "total_records": 47897,
+    "class_distribution": {
+      "2": 27464,
+      "0": 18262,
+      "1": 1846,
+      "3": 325
+    }
+  },
+  "client_3": {
+    "organization": "Organization C (Branch Office / Edge Perimeter)",
+    "file_path": "C:\\Users\\Hp\\Desktop\\Major Project (Project)\\dataset\\clients\\client_3.csv",
+    "total_records": 6523,
+    "class_distribution": {
+      "1": 4363,
+      "0": 1868,
+      "3": 291,
+      "2": 1
+    }
+  }
+}
